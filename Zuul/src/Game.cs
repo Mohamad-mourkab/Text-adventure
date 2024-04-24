@@ -8,6 +8,7 @@ class Game
 	private Player player;
 	// private object itemname;
 
+	//onderstaande fiels (slots) niet gebruiken...
 	public Room officeSlot;
 	public Room hallwaySlot;
 	public Room outsideSlot;
@@ -45,7 +46,7 @@ class Game
 		outside.AddExit("east", theatre);
 		outside.AddExit("south", gate);
 		outside.AddExit("west", hallway);
-		outside.AddExit("north", gym);
+		outside.AddExit("up", gym);
 
 		hallway.AddExit("north", office);
 		hallway.AddExit("east", outside);
@@ -71,7 +72,7 @@ class Game
 
 
 		gym.AddExit("east", swimmingpool);
-		gym.AddExit("south", outside);
+		gym.AddExit("down", outside);
 
 		swimmingpool.AddExit("west", gym);
 		swimmingpool.AddExit("east", dressingroom);
@@ -241,40 +242,60 @@ class Game
 	{
 		if (!command.HasSecondWord())
 		{
-			Console.WriteLine("Type use and the item name to excute");
+			Console.WriteLine("Type use and the item name + direction to excute");
 			return;
 		}
 
 
 		if (command.SecondWord == "bluekey")
 		{
-			if (player.CurrentRoom == hallwaySlot)
+			if (command.ThirdWord == "north")
 			{
-				Console.WriteLine("You used the bluekey. the room is unlocked");
-				officeSlot.locked = false;
-			}
 
+				if (player.CurrentRoom == hallwaySlot)
+				{
+					Console.WriteLine("You used the bluekey. the north room is unlocked");
+					officeSlot.locked = false;
+				}
+				else
+				{
+					Console.WriteLine("you cant use the bluekey here");
+					return;
+				}
+			}
 			else
 			{
-				Console.WriteLine("you cant use blue here");
+				Console.WriteLine("you cant use the bluekey here");
 				return;
 			}
 		}
+
+
+
 
 		if (command.SecondWord == "redkey")
 		{
-			if (player.CurrentRoom == outsideSlot)
+			if (command.ThirdWord == "south")
 			{
-				Console.WriteLine("You used the redkey. the room is unlocked");
-				gateSlot.locked = false;
-			}
 
+				if (player.CurrentRoom == outsideSlot)
+				{
+					Console.WriteLine("You used the redkey. the south room is unlocked");
+					gateSlot.locked = false;
+				}
+				else
+				{
+					Console.WriteLine("you cant use the redkey here");
+					return;
+				}
+			}
 			else
 			{
-				Console.WriteLine("you cant use redkey here");
+				Console.WriteLine("you cant use the redkey here");
 				return;
 			}
 		}
+
 
 
 

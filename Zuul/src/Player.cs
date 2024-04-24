@@ -27,6 +27,10 @@ class Player
     public void Damage(int amount)
     {
         health -= amount;
+
+        if (health < 0){
+            health = 0;
+        }
     }
 
     public bool TakeFromChest(string itemname)
@@ -39,9 +43,10 @@ class Player
             return false;
         }
 
-        if (pickup.Weight <= backpack.FreeWeight())
+        //onderzoeken waarom dit zo kan!!!
+        if (backpack.Put(itemname, pickup))
         {
-            backpack.Put(itemname, pickup);
+            
             Console.WriteLine("you picked the item");
             return true;
         }

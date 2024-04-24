@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\moham\\Desktop\\everything in the desktop\\Software-Developer_files\\studio files\\Mohamad_C#_Project\\Zuul\\Zuul.csproj": {}
+    "C:\\Users\\moham\\Desktop\\Text-adventure\\Zuul\\Zuul.csproj": {}
   },
   "projects": {
-    "C:\\Users\\moham\\Desktop\\everything in the desktop\\Software-Developer_files\\studio files\\Mohamad_C#_Project\\Zuul\\Zuul.csproj": {
+    "C:\\Users\\moham\\Desktop\\Text-adventure\\Zuul\\Zuul.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\moham\\Desktop\\everything in the desktop\\Software-Developer_files\\studio files\\Mohamad_C#_Project\\Zuul\\Zuul.csproj",
+        "projectUniqueName": "C:\\Users\\moham\\Desktop\\Text-adventure\\Zuul\\Zuul.csproj",
         "projectName": "Zuul",
-        "projectPath": "C:\\Users\\moham\\Desktop\\everything in the desktop\\Software-Developer_files\\studio files\\Mohamad_C#_Project\\Zuul\\Zuul.csproj",
+        "projectPath": "C:\\Users\\moham\\Desktop\\Text-adventure\\Zuul\\Zuul.csproj",
         "packagesPath": "C:\\Users\\moham\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\moham\\Desktop\\everything in the desktop\\Software-Developer_files\\studio files\\Mohamad_C#_Project\\Zuul\\obj\\",
+        "outputPath": "C:\\Users\\moham\\Desktop\\Text-adventure\\Zuul\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\moham\\AppData\\Roaming\\NuGet\\NuGet.Config",

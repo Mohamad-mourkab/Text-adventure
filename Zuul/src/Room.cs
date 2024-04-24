@@ -38,15 +38,6 @@ class Room
 		return description;
 	}
 
-	// public void Lock()
-	// {
-	// 	locked = true;
-	// }
-
-	// public void UnLock()
-	// {
-	// 	locked = false;
-	// }
 
 	public bool IsLocked()
 	{
